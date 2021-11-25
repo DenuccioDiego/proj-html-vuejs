@@ -1,6 +1,6 @@
 <template>
   <div>
-      
+     <font-awesome-icon icon="user-secret" />
   </div>
 </template>
 
