@@ -9,8 +9,8 @@
       <span class="fs-5">A wonderful serenity has taken possession of my entire soul, like <br> these sweet mornings of spring which I enjoy with my whole heart.</span>
     </div>
 
-    <div class="position-absolute top-100 start-50 translate-middle w-75 color_buttercup rounded-3">
-      <div class="p-5 row">
+    <div class="position-absolute top_80 start-50 translate-middle-x w-75 color_buttercup rounded-3">
+      <div class="p-5 row gx-0">
 
         <div class="col-6">
           <h2 class="pb-3 fw-bolder"><span class="text-white">Limited Sale:</span> All courses with 55% off</h2> 
@@ -87,5 +87,7 @@ button{
   color: white;
 }
 
-
+.top_80{
+  top:80%;
+}
 </style>
