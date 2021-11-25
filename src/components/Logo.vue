@@ -1,6 +1,6 @@
 <template>
-  <div>
-      
+  <div class="col-4">
+      <img src="../assets/images/MasterStudy-1.svg" alt="">
   </div>
 </template>
 

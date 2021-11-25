@@ -5,8 +5,16 @@ import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {faFacebook, faFontAwesome, faInstagram, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons"
+
+
 
 library.add(faUserSecret)
+library.add(faFontAwesome)
+library.add(faLinkedin)
+library.add(faInstagram)
+library.add(faFacebook)
+library.add(faTwitter)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

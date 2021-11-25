@@ -1,7 +1,7 @@
 <template>
   <div>
     
-    <header>
+    <header class="row container mx-auto py-5 gx-0">
       <Logo />
       <NavBar />
     </header>

@@ -1,18 +1,22 @@
 <template>
-  <div>
-       <div class="row ">
-            <div class="col-2">ciao</div>
-            <div class="col-2">ciao</div>
-            <div class="col-2">ciao</div>
-            <div class="col-2">ciao</div>
-            <div class="col-2">ciao</div>
-            <div class="col-2">ciao</div>
+     <div class="col-8">
+          <div class="text-end">
 
-       </div>
+               <span class="px-3"><a href="">Courses</a></span>
+               <span class="px-3"><a href="">Courses Formats</a> </span>
+               <span class="px-3"><a href="">Add Course</a></span>
+               <span class="px-3"><a href="">Pages</a></span>
+               <span class="px-3"><a href="">Demos</a></span>
+               <span class="px-3 align-middle">
+                    <font-awesome-icon class="fs-3 ps-2 " :icon="['fab', 'linkedin']" />
+                    <font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'instagram']" />
+                    <font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'facebook']" />
+                    <font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'twitter']" />
+               </span>
+
+          </div>
      
-     <font-awesome-icon icon="user-secret" />
-
-  </div>
+     </div>
 </template>
 
 <script>
@@ -23,5 +27,15 @@ export default {
 
 
 <style scoped lang="scss">
+
+a{
+     text-decoration: none;
+     color: black; 
+}
+
+span{
+     font-weight: 700;
+     font-size: 1.25rem;
+}
 
 </style>
