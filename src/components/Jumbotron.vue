@@ -23,7 +23,8 @@
         </div>
         
         <div class="col-6">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam placeat consequuntur quidem cum quae?
+          <!-- use this format date example:"Jan 5, 2022 15:37:25"-->
+          <Countdown deadline="Jan 5, 2022 15:37:25"></Countdown> 
         </div>
 
       </div>
@@ -33,22 +34,21 @@
 </template>
 
 <script>
-
+import Countdown from "./Countdown.vue"
 
 export default {
+  components: { 
+    Countdown
+  }
 
   
-  
-  // created() {
-  //   const now = this.$day().format('DD-MM-YY hh:mma')
-  //   console.log(now) // 11-05-2019 04:05pm 
-  // }
 
 }
 </script>
 
 
 <style scoped lang="scss">
+
 
 #jumbotron{
   background-image: url("../assets/images/slide-1.jpg");

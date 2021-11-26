@@ -47,9 +47,11 @@ export default {
 <style lang="scss">
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 :root{
   --buttercup: #f2b71d;
   --buttongrey: #2d4649;
+  --bgNewCourses: #edf2f5;
 }
 
 
