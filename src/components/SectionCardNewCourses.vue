@@ -1,16 +1,34 @@
 <template>
 
   <div class="bg_NewCourses mt-5">
-    <h2 class="fw-bolder text-center">NewCourses</h2>
+    
+    <h2 class="fw-bolder text-center py-5 fs-1">NewCourses</h2>
     <div class="container">
-      <div class="row">
-        <div v-for="card in cards" :key="card.title">
-          <img :src="require('../assets/images/'+card.img)"> 
-          {{card.title}}
-          {{card.genere}}
-          {{card.level}}
-          {{card.lectures}}
-          {{card.lastLectures}}
+      <div class="row gx-0 justify-content-evenly row_gap_70">
+        <div class="w_30 card col-3 rounded-0 border-0 border_card " v-for="card in cards" :key="card.title">
+          <img class="card-img-top rounded-0" :src="require('../assets/images/'+card.img)">
+          
+          <div class="card-body text-center">
+            <h5 class="card-title py-2">{{card.title}}</h5>
+            <p class="card-text"><small class="text-muted">{{card.genere}}</small></p>
+            <p class="card-text row gx-0 barra_card pt-3">
+
+              <span class="col-4">
+                <font-awesome-icon class="fs-5 ps-2 align-sub color_buttercup" :icon="['fas', 'signal']" /> {{card.level}}
+              </span>
+
+              <span class="col-4" >
+                <font-awesome-icon class="fs-5 ps-2 align-sub color_buttercup" :icon="['fas', 'bars']" /> {{card.lectures}} Lectures
+                
+              </span>
+
+              <span class="col-4" >
+                <font-awesome-icon class="fs-5 ps-2 align-sub color_buttercup" :icon="['fas', 'clock']" /> {{card.lastLectures}} hours
+              </span>
+
+            </p>
+          </div>
+          
         </div>
         
         
@@ -27,52 +45,64 @@ export default {
     return{
       cards:[
         {
-          img : "photo-1496307042754-b4aa456c4a2d-370x200.jpeg",
+          img : "photo-1496307042754-b4aa456c4a2d-740x400.jpeg",
           title :"How to be a DJ? Make Electronic Music",
           genere : "Eletronic",
           level : "Adavanced",
           lectures : "8",
           lastLectures : "6",
+          special : true,
+          price : "$59", 
         },
         {
-          img : "12345-1-370x200.png",
+          img : "12345-1-740x400.png",
           title :"Nvidia and UE4 Technologies Practice",
           genere : "Nvidia",
           level : "Adavanced",
           lectures : "8",
           lastLectures : "6",
+          special : true,
+          price : "$78", 
         },
         {
-          img : "photo-1491897554428-130a60dd4757-370x200.jpeg",
+          img : "photo-1491897554428-130a60dd4757-740x400.jpeg",
           title :"Fashion Photography from professional",
           genere : "Fashion",
           level : "Adavanced",
           lectures : "6",
           lastLectures : "6",
+          special : true,
+          price : "$50", 
         },
         {
-          img : "photo-1416339134316-0e91dc9ded92-370x200.jpeg",
+          img : "photo-1416339134316-0e91dc9ded92-740x400.jpeg",
           title :"Design Instruments for Communication",
           genere : "Communication",
           level : "Adavanced",
           lectures : "6",
           lastLectures : "6",
+          special : false,
+          price : "$90", 
         },
         {
-          img : "cathryn-lavery-67852-unsplash-370x200.jpg",
+          img : "cathryn-lavery-67852-unsplash-740x400.jpg",
           title :"Make your Concept Right and Beautiful",
           genere : "Art",
           level : "Adavanced",
           lectures : "5",
           lastLectures : "6",
+          special : false,
+          price : "$70", 
         },
         {
-          img : "photo-1475452779376-caebfb988090-370x200.jpeg",
+          img : "photo-1475452779376-caebfb988090-740x400.jpeg",
           title :"Road Bike Manual or How to Be a Champion.",
           genere : "Bicycling",
           level : "Adavanced",
           lectures : "6",
           lastLectures : "6",
+          special : false,
+          price : "$20", 
         },
       ],
     }
@@ -90,9 +120,31 @@ export default {
 .bg_NewCourses{
   background-color: var(--bgNewCourses);
 }
-.immagine{
-  width: 100px;
-  height: 100px;
+
+.barra_card{
+  border-top: 1px solid #e0e0e0;
+}
+ 
+.row_gap_70{
+  row-gap: 45px;
+  column-gap: 1px;
+}
+
+.w_30{
+  width: 28%;
+}
+
+.align-sub{
+  vertical-align: sub;
+}
+
+.border_card{
+  border: 1px solid #e0e0e0 !important;
+  border-top: none !important;
+}
+
+.color_buttercup{
+  color:var(--buttercup)
 }
 
 </style>

@@ -2,13 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {faFacebook, faFontAwesome, faInstagram, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons"
+import { library} from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret,faClock, faSignal, faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+import {faFacebook, faFontAwesome, faInstagram, faLinkedin, faTwitter,} from "@fortawesome/free-brands-svg-icons"
 
-
-
+library.add(faBars)
+library.add(faSignal)
+library.add(faClock)
 library.add(faUserSecret)
 library.add(faFontAwesome)
 library.add(faLinkedin)
