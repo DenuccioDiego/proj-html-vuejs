@@ -4,7 +4,15 @@
     <h2 class="fw-bolder text-center">NewCourses</h2>
     <div class="container">
       <div class="row">
-
+        <div v-for="card in cards" :key="card.img" >
+          <img :src="card.img" alt="">
+          {{'../assets/images/'+ card.img}}
+          {{card.title}}
+          {{card.genere}}
+          {{card.level}}
+          {{card.lectures}}
+          {{card.lastLectures}}
+        </div>
       </div>
     </div>
   </div>
@@ -18,7 +26,7 @@ export default {
     return{
       cards:[
         {
-          img : "photo-1496307042754-b4aa456c4a2d-370x200.jpeg",
+          img : "../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg",
           title :"How to be a DJ? Make Electronic Music",
           genere : "Eletronic",
           level : "Adavanced",
