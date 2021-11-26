@@ -30,8 +30,10 @@ import SectionCardNewCourses from './components/SectionCardNewCourses.vue'
 import Footer from './components/Footer.vue'
 
 
+
 export default {
   
+
   components: {
     Logo,
     NavBar,

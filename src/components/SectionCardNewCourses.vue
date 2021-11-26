@@ -4,15 +4,16 @@
     <h2 class="fw-bolder text-center">NewCourses</h2>
     <div class="container">
       <div class="row">
-        <div v-for="card in cards" :key="card.img" >
-          <img :src="card.img" alt="">
-          {{'../assets/images/'+ card.img}}
+        <div v-for="card in cards" :key="card.title">
+          <img :src="require('../assets/images/'+card.img)"> 
           {{card.title}}
           {{card.genere}}
           {{card.level}}
           {{card.lectures}}
           {{card.lastLectures}}
         </div>
+        
+        
       </div>
     </div>
   </div>
@@ -26,7 +27,7 @@ export default {
     return{
       cards:[
         {
-          img : "../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg",
+          img : "photo-1496307042754-b4aa456c4a2d-370x200.jpeg",
           title :"How to be a DJ? Make Electronic Music",
           genere : "Eletronic",
           level : "Adavanced",
@@ -58,7 +59,7 @@ export default {
           lastLectures : "6",
         },
         {
-          img : "cathryn-lavery-67852-unsplash-370x200",
+          img : "cathryn-lavery-67852-unsplash-370x200.jpg",
           title :"Make your Concept Right and Beautiful",
           genere : "Art",
           level : "Adavanced",
@@ -73,11 +74,12 @@ export default {
           lectures : "6",
           lastLectures : "6",
         },
-
       ],
     }
 
-  }
+  },
+
+  
 
 }
 </script>
@@ -88,6 +90,9 @@ export default {
 .bg_NewCourses{
   background-color: var(--bgNewCourses);
 }
-
+.immagine{
+  width: 100px;
+  height: 100px;
+}
 
 </style>
