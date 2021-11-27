@@ -16,6 +16,9 @@
       <SectionDescription />
       <SectionCardNewCourses />
       <SectionOrderWithAmazon />
+      <SectionWhyMyCourse
+      :benefits="benefit" 
+      />
     </main>
 
     <footer>
@@ -32,6 +35,7 @@ import Jumbotron from './components/Jumbotron.vue'
 import SectionDescription from './components/SectionDescription.vue'
 import SectionCardNewCourses from './components/SectionCardNewCourses.vue'
 import SectionOrderWithAmazon from './components/SectionOrderWithAmazon.vue'
+import SectionWhyMyCourse from './components/SectionWhyMyCourse.vue'
 import Footer from './components/Footer.vue'
 
 
@@ -47,6 +51,29 @@ export default {
         "Demos",
       ],
       logo:"MasterStudy-1.svg",
+      benefit : [
+        {
+          title : "Entrepreneurship",
+          text : "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+          img :  "shopping-bag",
+        },
+        {
+          title : "Accelerated learning",
+          text : "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+          img : "rocket",
+        },
+        {
+          title : "Productivity",
+          text : "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+          img : "thumbs-down",
+        },
+        {
+          title : "Life Coaching",
+          text : "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+          img : "cog",
+        },
+      ]
+
     }
   },
 
@@ -57,6 +84,7 @@ export default {
     SectionDescription,
     SectionCardNewCourses,
     SectionOrderWithAmazon,
+    SectionWhyMyCourse,
     Footer,
     
   }
