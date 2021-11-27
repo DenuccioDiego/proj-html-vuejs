@@ -2,7 +2,9 @@
   <div>
     
     <header class="row container mx-auto py-5 gx-0">
-      <Logo />
+      <Logo
+      :logo="logo"
+       />
       <NavBar 
       :link="links" 
       />
@@ -42,7 +44,8 @@ export default {
         "Add Course",
         "Pages",
         "Demos",
-      ]
+      ],
+      logo:"MasterStudy-1.svg",
     }
   },
 
