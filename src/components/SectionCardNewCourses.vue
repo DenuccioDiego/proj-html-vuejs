@@ -2,12 +2,21 @@
 
   <div class="bg_NewCourses mt-5">
     
-    <h2 class="fw-bolder text-center py-5 fs-1">NewCourses</h2>
+    <h2 class="fw-bolder text-center py-5 fs-1">New Courses</h2>
     <div class="container">
       <div class="row gx-0 justify-content-evenly row_gap_70">
-        <div class="w_30 card col-3 rounded-0 border-0 border_card " v-for="card in cards" :key="card.title">
-          <img class="card-img-top rounded-0" :src="require('../assets/images/'+card.img)">
+        <div class="w_30 position-relative card col-3 rounded-0 border-0 border_card " v-for="card in cards" :key="card.title">
           
+           
+          <div class="price_hidden position-relative">
+            <!-- {{card.price}} -->
+            <div>
+              <img class="card-img-top rounded-0" :src="require('../assets/images/'+card.img)">
+            </div> 
+          </div>
+
+          
+
           <div class="card-body text-center">
             <h5 class="card-title py-2">{{card.title}}</h5>
             <p class="card-text"><small class="text-muted">{{card.genere}}</small></p>
@@ -29,10 +38,21 @@
             </p>
           </div>
           
+          
+
+          <div v-if="card.special" class="position-absolute position-absolute special_button rounded-2 p-1">
+            <span>SPECIAL</span>
+          </div>
+
         </div>
         
         
       </div>
+
+      <div class="d-flex py-5">
+        <button class="btn_cards text-white mx-auto">LOAD MORE</button>
+      </div>
+
     </div>
   </div>
 
@@ -145,6 +165,32 @@ export default {
 
 .color_buttercup{
   color:var(--buttercup)
+}
+
+.special_button{
+  background-color: var(--bho);
+  color:white;
+  top: 2.5%;
+  right: 2.5%;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.btn_cards{
+  position: relative;
+  background-color: var(--buttercup) ;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.75rem 1.4rem 0.75rem 1.4rem;
+}
+
+.price_hidden{
+  // background-color: var(--DoveGray);
+  color: white;
+  background-color: yellow;
+  font-size: 2rem;
 }
 
 </style>
