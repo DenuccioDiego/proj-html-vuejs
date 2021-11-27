@@ -67,6 +67,7 @@ export default {
 
 :root{
   --bho: #f09b23;
+  --hoverlinks: #f9c5a3;
   --buttercup: #f2b71d;
   --buttongrey: #2d4649;
   --bgNewCourses: #edf2f5;
