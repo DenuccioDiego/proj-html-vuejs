@@ -1,12 +1,9 @@
 <template>
      <div class="col-8">
           <div class="text-end">
-
-               <span class="px-3"><a href="">Courses</a></span>
-               <span class="px-3"><a href="">Courses Formats</a> </span>
-               <span class="px-3"><a href="">Add Course</a></span>
-               <span class="px-3"><a href="">Pages</a></span>
-               <span class="px-3"><a href="">Demos</a></span>
+               
+               <span class="px-3" v-for="(item, index) in link" :key="item[index]"><a href=""> {{item}} </a></span>
+               
                <span class="px-3 align-middle">
                     <font-awesome-icon class="fs-3 ps-2 " :icon="['fab', 'linkedin']" />
                     <font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'instagram']" />
@@ -21,7 +18,12 @@
 
 <script>
 export default {
-  
+  props:{
+     link : Array,
+  },
+
+
+
 }
 </script>
 

@@ -3,7 +3,9 @@
     
     <header class="row container mx-auto py-5 gx-0">
       <Logo />
-      <NavBar />
+      <NavBar 
+      :link="links" 
+      />
     </header>
     
 
@@ -32,7 +34,17 @@ import Footer from './components/Footer.vue'
 
 
 export default {
-  
+  data(){
+    return{
+      links:[
+        "Courses",
+        "Courses Formats",
+        "Add Course",
+        "Pages",
+        "Demos",
+      ]
+    }
+  },
 
   components: {
     Logo,
@@ -51,9 +63,11 @@ export default {
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 :root{
+  --bho: #f09b23;
   --buttercup: #f2b71d;
   --buttongrey: #2d4649;
   --bgNewCourses: #edf2f5;
+  --DoveGray: #6b6b6b;
 }
 
 
