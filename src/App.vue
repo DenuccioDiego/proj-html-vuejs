@@ -15,7 +15,7 @@
       <Jumbotron />
       <SectionDescription />
       <SectionCardNewCourses />
-
+      <SectionOrderWithAmazon />
     </main>
 
     <footer>
@@ -31,6 +31,7 @@ import NavBar from './components/NavBar.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import SectionDescription from './components/SectionDescription.vue'
 import SectionCardNewCourses from './components/SectionCardNewCourses.vue'
+import SectionOrderWithAmazon from './components/SectionOrderWithAmazon.vue'
 import Footer from './components/Footer.vue'
 
 
@@ -55,6 +56,7 @@ export default {
     Jumbotron,
     SectionDescription,
     SectionCardNewCourses,
+    SectionOrderWithAmazon,
     Footer,
     
   }
