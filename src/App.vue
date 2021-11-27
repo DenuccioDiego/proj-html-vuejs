@@ -65,7 +65,7 @@ export default {
         {
           title : "Productivity",
           text : "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
-          img : "thumbs-down",
+          img : "thumbs-up",
         },
         {
           title : "Life Coaching",
