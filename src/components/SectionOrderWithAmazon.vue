@@ -6,7 +6,7 @@
 
                     <div class="col-6 text-center align-self-center">
                          <h2 class="pb-4">Get My Exclusive Investing Book just fot $19.50</h2>
-                         <p class="text-white fs-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia a nihil distinctio optio molestiae?</p>
+                         <p class="text-white fs-3 pb-4">Lorem lorem lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia a nihil distinctio optio molestiae?</p>
                          <img src="../assets/images/amazon.png" alt=""  >
                     </div>
 
