@@ -41,7 +41,7 @@ span{
 }
 
 a:hover{
-     color: var(--hoverlinks);
+     color: var(--buttercup);
 }
 
 </style>

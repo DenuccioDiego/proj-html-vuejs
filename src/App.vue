@@ -19,6 +19,8 @@
       <SectionWhyMyCourse
       :benefits="benefit" 
       />
+      <SectionInfo />
+
     </main>
 
     <footer>
@@ -36,6 +38,7 @@ import SectionDescription from './components/SectionDescription.vue'
 import SectionCardNewCourses from './components/SectionCardNewCourses.vue'
 import SectionOrderWithAmazon from './components/SectionOrderWithAmazon.vue'
 import SectionWhyMyCourse from './components/SectionWhyMyCourse.vue'
+import SectionInfo from './components/SectionInfo.vue'
 import Footer from './components/Footer.vue'
 
 
@@ -85,6 +88,7 @@ export default {
     SectionCardNewCourses,
     SectionOrderWithAmazon,
     SectionWhyMyCourse,
+    SectionInfo,
     Footer,
     
   }
