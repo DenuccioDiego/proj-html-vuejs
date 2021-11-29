@@ -142,4 +142,9 @@ img{
   top: 0;
 }
 
+.long-arrow-left:hover,
+.long-arrow-right:hover{
+     cursor: pointer;
+}
+
 </style>
