@@ -114,7 +114,8 @@ export default {
   --fuelYellow: #eab830;
   --bho: #f09b23;
   --hoverlinks: #f9c5a3;
-  --buttercup: #f2b71d;
+  // --buttercup: #f2b71d; cambio colore richiesta cliente
+  --buttercup: #0d9213;
   --buttongrey: #2d4649;
   --bgNewCourses: #edf2f5;
   --DoveGray: #6b6b6b;
