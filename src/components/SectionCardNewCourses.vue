@@ -7,16 +7,13 @@
       <div class="row gx-0 justify-content-evenly row_gap_70">
         <div class="w_30 position-relative card col-3 rounded-0 border-0 border_card " v-for="card in cards" :key="card.title">
           
-           
-          <div class="price_hidden position-relative">
-            <!-- {{card.price}} -->
-            <div>
-              <img class="card-img-top rounded-0" :src="require('../assets/images/'+card.img)">
-            </div> 
-          </div>
-
+          <img class="card-img-top rounded-0" :src="require('../assets/images/'+card.img)"> 
           
-
+          <div class="position-absolute price_hidden">
+            {{card.price}}
+          </div>
+            
+             
           <div class="card-body text-center">
             <h5 class="card-title py-2">{{card.title}}</h5>
             <p class="card-text"><small class="text-muted">{{card.genere}}</small></p>
@@ -187,14 +184,24 @@ export default {
 }
 
 .price_hidden{
-  // background-color: var(--DoveGray);
   color: white;
-  background-color: yellow;
-  font-size: 2rem;
+  font-size: 1.65rem;
+  font-weight: 700;
+  left: 43%;
+  top: 20%;
+  opacity: 0;
 }
-
 
 button:hover{
   filter: brightness(0.9);
 }
+
+.card:hover img{
+  filter: contrast(0.2);
+}
+
+.card:hover .price_hidden{
+  opacity: 1;
+}
+
 </style>
