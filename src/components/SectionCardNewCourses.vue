@@ -193,4 +193,8 @@ export default {
   font-size: 2rem;
 }
 
+
+button:hover{
+  filter: brightness(0.9);
+}
 </style>

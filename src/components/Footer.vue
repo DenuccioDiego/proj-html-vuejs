@@ -20,9 +20,9 @@
           </ul>
             
           <div class="d-flex" v-for="(item, index) in section.text.section " :key="section.text.section[index]">
-            <img  v-if="index == 1" class="col-3 h-100" src="../assets/images/photo-1490376840453-5f616fbebe5b-50x50.jpeg"> 
-            <img  v-if="index == 0" class="col-3 h-100" src="../assets/images/photo-1517520287167-4bbf64a00d66-50x50.jpeg"> 
-            <div class="col-8">
+            <img  v-if="index == 1" class="col-3 h-100 pe-3" src="../assets/images/photo-1490376840453-5f616fbebe5b-50x50.jpeg"> 
+            <img  v-if="index == 0" class="col-3 h-100 pe-3" src="../assets/images/photo-1517520287167-4bbf64a00d66-50x50.jpeg"> 
+            <div class="col-8 pb-2">
               <h6> {{item.titlephoto}} </h6>
               <span> {{item.date}} </span>
             </div>
