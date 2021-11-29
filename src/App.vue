@@ -100,6 +100,7 @@ export default {
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 :root{
+  --fuelYellow: #eab830;
   --bho: #f09b23;
   --hoverlinks: #f9c5a3;
   --buttercup: #f2b71d;
