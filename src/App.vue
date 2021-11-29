@@ -102,7 +102,7 @@ export default {
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 :root{
-
+  --starColor: #f2b91e;
   --fuelYellow: #eab830;
   --bho: #f09b23;
   --hoverlinks: #f9c5a3;
