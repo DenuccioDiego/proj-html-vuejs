@@ -6,9 +6,11 @@
       <div class="d-flex pt-5"> 
 
         <div class="col-3 p-3" v-for="section in sectionFooter " :key="section.title">
-          <h4>{{section.title}}</h4>
+          <h4 class="">{{section.title}}</h4>
           <p> {{section.text.text}} </p>
-          <span v-for="(icon, index) in section.text.icone" :key="section.text.icone[index]">{{icon}}</span>
+          <font-awesome-icon v-for="(icon, index) in section.text.icone" :key="section.text.icone[index]"
+          class="fs-5 me-3  align-sub " :icon="['fab', icon]" /> 
+          
           <p> {{section.text.indirizzo}} </p>
           <span> {{section.text.telefono}} </span>
           <p> {{section.text.telefono}} </p>
@@ -18,7 +20,8 @@
           </ul>
             
           <div class="d-flex" v-for="(item, index) in section.text.section " :key="section.text.section[index]">
-            <img class="col-4" :src="'../assets/images/photo-'+item.img">
+            <img  v-if="index == 1" class="col-3 h-100" src="../assets/images/photo-1490376840453-5f616fbebe5b-50x50.jpeg"> 
+            <img  v-if="index == 0" class="col-3 h-100" src="../assets/images/photo-1517520287167-4bbf64a00d66-50x50.jpeg"> 
             <div class="col-8">
               <h6> {{item.titlephoto}} </h6>
               <span> {{item.date}} </span>
@@ -95,7 +98,7 @@ export default {
                 date : "August 9, 2018",
               },
               {
-                img : "1490376840453-5f616fbebe5b-50x50.jepg",
+                img : "photo-1490376840453-5f616fbebe5b-50x50",
                 titlephoto : "Those Other College Expenses You Aren`t Thinking About",
                 date : "June 3, 2015",
               },
