@@ -20,7 +20,7 @@
       :benefits="benefit" 
       />
       <SectionInfo />
-
+      <WhatStudentsSayCarousel />
     </main>
 
     <footer>
@@ -39,6 +39,7 @@ import SectionCardNewCourses from './components/SectionCardNewCourses.vue'
 import SectionOrderWithAmazon from './components/SectionOrderWithAmazon.vue'
 import SectionWhyMyCourse from './components/SectionWhyMyCourse.vue'
 import SectionInfo from './components/SectionInfo.vue'
+import WhatStudentsSayCarousel from './components/WhatStudentsSay(carousel).vue'
 import Footer from './components/Footer.vue'
 
 
@@ -75,7 +76,7 @@ export default {
           text : "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
           img : "cog",
         },
-      ]
+      ],
 
     }
   },
@@ -89,6 +90,7 @@ export default {
     SectionOrderWithAmazon,
     SectionWhyMyCourse,
     SectionInfo,
+    WhatStudentsSayCarousel,
     Footer,
     
   }
@@ -100,6 +102,7 @@ export default {
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 :root{
+
   --fuelYellow: #eab830;
   --bho: #f09b23;
   --hoverlinks: #f9c5a3;
