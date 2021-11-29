@@ -7,6 +7,7 @@
        />
       <NavBar 
       :link="links" 
+      :socialIcons="socialIcons"
       />
     </header>
     
@@ -54,6 +55,13 @@ export default {
         "Pages",
         "Demos",
       ],
+      socialIcons :[
+        "linkedin",
+        "instagram",
+        "facebook",
+        "twitter",
+      ] ,
+
       logo:"MasterStudy-1.svg",
       benefit : [
         {

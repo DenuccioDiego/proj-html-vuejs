@@ -5,10 +5,11 @@
                <span class="px-3" v-for="(item, index) in link" :key="item[index]"><a href=""> {{item}} </a></span>
                
                <span class="px-3 align-middle">
-                    <a href=""><font-awesome-icon class="fs-3 ps-2 " :icon="['fab', 'linkedin']" /></a>
-                    <a href=""><font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'instagram']" /></a>
-                    <a href=""><font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'facebook']" /></a>
-                    <a href=""><font-awesome-icon class="fs-3 ps-2" :icon="['fab', 'twitter']" /></a>
+                    
+                    <a v-for="(icon, index) in socialIcons" :key="socialIcons[index]" href="">
+                         <font-awesome-icon class="fs-3 ps-2 " :icon="['fab', icon]" />
+                    </a>
+                    
                </span>
 
           </div>
@@ -20,6 +21,7 @@
 export default {
   props:{
      link : Array,
+     socialIcons : Array,
   },
 
 
