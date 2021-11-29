@@ -3,11 +3,13 @@ import App from './App.vue'
 
 
 import { library} from '@fortawesome/fontawesome-svg-core'
-import { faClock, faSignal, faBars, faRocket, faCog, faShoppingBag, faThumbsUp, faFilm, faUserFriends, faImages } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faSignal, faBars, faRocket, faCog, faShoppingBag, faThumbsUp, faFilm, faUserFriends, faImages, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 import {faFacebook, faFontAwesome, faInstagram, faLinkedin, faTwitter,} from "@fortawesome/free-brands-svg-icons"
 import { far, } from '@fortawesome/free-regular-svg-icons'
 
+library.add(faArrowRight)
+library.add(faArrowLeft)
 library.add(faThumbsUp)
 library.add(faImages)
 library.add(faFilm)

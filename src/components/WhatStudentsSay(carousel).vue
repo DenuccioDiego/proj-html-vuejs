@@ -2,7 +2,21 @@
      <div>
           <h2 class="text-center pt-5 pb-4">What Students Say</h2>
           <div class="container">
-               <div></div>
+               <div class="text-center">
+                    <font-awesome-icon v-on:click="decrement()" class="fs-1 " :icon="['fas', 'arrow-left']" /> 
+
+                    <img v-for="(studentImage, index) in students" :key="students[index]"
+                    :src="require('../assets/images/'+studentImage.img)" alt=""
+                    :class="(counter == index) ? 'grande' : ''"
+                    class="rounded-circle col"
+                    >
+
+                    <font-awesome-icon v-on:click="increment()" class="fs-1" :icon="['fas', 'arrow-right']" /> 
+               </div>
+               <div v-show="counter == index" class="text-center" v-for="(student, index) in students" :key="students[index]">
+                    <h6>{{student.title}}</h6>
+                    <p> {{student.text}} </p>
+               </div>
           </div>
      </div>
 </template>
@@ -29,12 +43,44 @@ export default{
                          title: "Investing for Your Future",
                          text : " It is no exaggeration to say this MasterStudy experience was transformative–both professionally and personally. This workshop will long remain a high point of my life. Thanks again…. I am feeling energized and eager to start teaching my class next week. I can’t wait to use all of my new teaching tools. I will absolutely recommend this workshop to other educators!",
                     },
-               ]
+               ],
+
+               counter : 1 ,
+          }
+     },
+     
+     methods:{
+          increment() {
+               
+               if(this.counter <= 1) {
+                    this.counter += 1;
+
+               }
+               else{
+                    this.counter = 0
+               }
+               
+          },
+
+          decrement() {
+               
+               if(this.counter >= 1 ){
+                    this.counter -= 1;
+               }
+               else{
+                    this.counter = 2
+               }
+
           }
      }
+
 }
 </script>
 
 <style scoped lang="scss">
+
+ .grande{
+     width: 10%;
+ }
 
 </style>
